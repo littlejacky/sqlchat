@@ -36,9 +36,9 @@ const Header = (props: Props) => {
               <Icon.IoIosMenu className="text-gray-600 w-full h-auto" />
             </button>
             <span className="w-auto text-left block lg:hidden">{title}</span>
-            <GitHubStarBadge className="hidden lg:flex ml-2" />
+            {/* <GitHubStarBadge className="hidden lg:flex ml-2" /> */}
           </div>
-          <span className="w-auto text-center hidden lg:flex justify-center items-center">
+          {/* <span className="w-auto text-center hidden lg:flex justify-center items-center">
             <a
               href="https://www.bytebase.com?source=sqlchat"
               className="hidden sm:block w-auto h-auto py-1 px-2 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-700"
@@ -50,7 +50,7 @@ const Header = (props: Props) => {
                 alt=""
               />
             </a>
-          </span>
+          </span> */}
         </div>
         <ConversationTabsView />
       </div>

@@ -16,22 +16,8 @@ const OpenAIApiConfigView = () => {
 
   const models = [
     {
-      id: "gpt-3.5-turbo",
-      title: `GPT-3.5 Turbo`,
-      cost: 1,
-      disabled: false,
-      tooltip: "",
-    },
-    {
-      id: "gpt-4-turbo",
-      title: `GPT-4 Turbo`,
-      cost: 20,
-      disabled: false,
-      tooltip: "",
-    },
-    {
-      id: "gpt-4",
-      title: `GPT-4`,
+      id: "gpt-4o-mini",
+      title: `GPT-4o-mini`,
       cost: 60,
       disabled: false,
       tooltip: "",
@@ -40,7 +26,7 @@ const OpenAIApiConfigView = () => {
       id: "gpt-4o",
       title: `GPT-4o`,
       cost: 10,
-      disabled: false,
+      disabled: true,
       tooltip: "",
     },
   ];

@@ -6,7 +6,7 @@ export const hasDatabase = () => {
 
 const matrix: { [key: string]: { [feature: string]: boolean } } = {
   development: {
-    debug: true,
+    debug: false,
     account: hasDatabase(),
     payment: hasDatabase(),
     quota: hasDatabase(),

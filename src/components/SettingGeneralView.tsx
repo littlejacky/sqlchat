@@ -16,7 +16,7 @@ const SettingGeneralView = () => {
 
   return (
     <div className="w-full flex flex-col justify-start items-start space-y-2 sm:space-y-4 py-4 sm:py-8">
-      <div className="w-full flex flex-row justify-start items-start flex-wrap gap-2">
+      {/* <div className="w-full flex flex-row justify-start items-start flex-wrap gap-2">
         <a
           href="https://discord.gg/z6kakemDjm"
           className="w-auto px-4 py-2 rounded-full bg-indigo-600 text-white text-sm font-medium flex flex-row justify-center items-center hover:underline hover:shadow"
@@ -26,7 +26,7 @@ const SettingGeneralView = () => {
           {t("social.join-discord-channel")}
         </a>
         <WeChatQRCodeView />
-      </div>
+      </div> */}
 
       {hasFeature("debug") && (
         <div className="w-full border border-gray-200 dark:border-zinc-700 p-4 rounded-lg space-y-2">
@@ -66,7 +66,7 @@ const SettingGeneralView = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-row justify-start items-center p-4 gap-2">
+      {/* <div className="w-full flex flex-row justify-start items-center p-4 gap-2">
         <a className="text-blue-600 hover:underline" href={"privacy"} target="_blank">
           Privacy
         </a>
@@ -74,7 +74,7 @@ const SettingGeneralView = () => {
         <a className="text-blue-600 hover:underline" href={"terms"} target="_blank">
           Terms
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
