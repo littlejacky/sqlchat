@@ -93,7 +93,6 @@ const ConnectionSidebar = () => {
         (database) =>
           database.connectionId === currentConnectionCtx?.connection.id && database.name === currentConnectionCtx?.database?.name
       )?.schemaList || [];
-
     updateSchemaList(schemaList);
     // need to create a conversation. otherwise updateSelectedSchemaName will failed.
     createConversation();
@@ -119,10 +118,15 @@ const ConnectionSidebar = () => {
   }, [selectedSchemaName, schemaList]);
 
   useEffect(() => {
+    const schemaList =
+      connectionStore.databaseList.find(
+        (database) =>
+          database.connectionId === currentConnectionCtx?.connection.id && database.name === currentConnectionCtx?.database?.name
+      )?.schemaList || [];
     if (hasSchemaProperty && selectedSchemaName === "" && schemaList.length > 0) {
       conversationStore.updateSelectedSchemaName(head(schemaList)?.name || "");
     }
-  }, [schemaList, currentConversation]);
+  }, [currentConversation]);
 
   const syncDatabaseList = async () => {
     if (!currentConnectionCtx?.connection) {
